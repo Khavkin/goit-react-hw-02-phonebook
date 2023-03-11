@@ -68,7 +68,10 @@ class App extends Component {
         <ContactForm onSubmit={this.handleOnSubitContactForm} />
 
         <h2>Contacts</h2>
-        <Filter onChange={this.handleOnFilterChange} />
+        <Filter
+          filter={this.state.filter}
+          onChange={this.handleOnFilterChange}
+        />
         <ContactList
           contacts={this.showContacts()}
           onDelete={this.handleOnDeleteContact}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 class Filter extends Component {
   static propTypes = {
+    filter: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
   };
   handleOnChange = ({ currentTarget }) => {
